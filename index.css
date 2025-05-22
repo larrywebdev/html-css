@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins and prevent horizontal scroll */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section Wrapper */
+.hero-wrapper {
+  background-image: url("images/technology-integrated-everyday-life.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation Links */
+.header-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-right a {
+  display: inline-block;
+  width: 6rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  transition: background-color 0.3s;
+}
+
+.header-right a:hover {
+  background-color: #ffffff4d;
+  color: #000000;
+}
+.header-right a.active:hover {
+  background-color: #3a59d1;
+}
+
+.header-right a:active {
+  transform: scale(0.94);
+  background-color: #ffffffa7;
+}
+.active {
+  background-color: #3a59d1;
+}
+/* Hero content */
+.hero {
+  color: #ffffff;
+  text-align: justify;
+  position: relative;
+  top: 5vh;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 80%;
+}
+
+/* Mid Section */
+.second-section {
+  text-align: justify;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card img {
+  width: 40%;
+  height: 18rem;
+}
+
+.offering {
+  text-align: justify;
+}
+.offering h3 {
+  text-align: center;
+}
+.offering p {
+  margin: 0;
+}
+
+/* Third Section */
+.third-section {
+  background-color: #3a59d1;
+  color: white;
+  text-align: justify;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 4rem 0;
+}
+
+.third-section p {
+  width: 80%;
+}
+
+.fourth-section {
+  margin: 5rem 0 10rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Offer Section */
+h3 {
+  margin: 0;
+  color: #3a59d1;
+}
+
+.offer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.offer {
+  width: 80%;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 5%;
+  background-color: white;
+}
+
+/* Button */
+.button-62 {
+  background-color: #3a59d1;
+  border: 0;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.button-62:hover {
+  color: #000000;
+}
+.button-62:active {
+  transform: scale(0.94);
+}
+
+/* Footer */
+footer {
+  background-color: #3a59d1;
+  text-align: -webkit-center;
+  padding: 3rem 0;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #000000;
+}
+
+.links h3 {
+  color: white;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.social {
+  background-color: white;
+  width: 2.3rem;
+  border-radius: 50%;
+}
+
+hr {
+  width: 80%;
+  border: rgba(0, 0, 0, 0.15) 1px solid;
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero-wrapper {
+    min-height: 100vh;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .header-right {
+    flex-direction: column;
+  }
+  .header-right a {
+    margin: 5px 0;
+  }
+
+  .hero {
+    top: 0;
+    padding: 2rem 0;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+  .card {
+    gap: 1rem;
+    width: 80%;
+  }
+  .card img {
+    width: 100%;
+    height: 15rem;
+  }
+  .footer {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  /* Base styles usually go here or in the main CSS */
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 13%;
+  }
+  .header-right {
+    flex-direction: column;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+  .hero {
+    top: 0;
+    padding: 2rem 0;
+    width: 70%;
+  }
+  hr {
+    width: 70%;
+  }
+  .card {
+    width: 70%;
+  }
+  .card img {
+    width: 100%;
+    height: 18rem;
+  }
+  .third-section p {
+    width: 70%;
+  }
+  .offer {
+    width: 70%;
+  }
+  footer {
+    padding: 5% 15%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    margin: 0 5.5%;
+    padding: 0;
+  }
+  hr {
+    width: 93%;
+  }
+  .card {
+    gap: 2rem;
+  }
+  .card img {
+    width: 40%;
+    height: 15rem;
+  }
+  .offering {
+    width: 50%;
+  }
+  .third-section p {
+    width: 93%;
+  }
+  .offer {
+    padding: 4%;
+    width: 93%;
+  }
+
+  .footer {
+    width: 93vw;
+  }
+}
+
+/* Large devices (small laptops/desktops, 1024px and up) */
+@media (min-width: 1025px) {
+  hr {
+    width: clamp(320px, 96vw, 1080px);
+  }
+  .card img {
+    width: 450px;
+    height: 20rem;
+  }
+  .offering {
+    width: clamp(515px, 50vw, 600px);
+  }
+  .third-section p {
+    width: clamp(320px, 96vw, 1080px);
+  }
+  .offer {
+    width: clamp(303px, 30vw, 339px);
+    padding: 2rem;
+  }
+  .footer {
+    padding: 3rem 0;
+    justify-content: space-between;
+    width: 96vw;
+    max-width: 1080px;
+  }
+  /* Wider content, bigger padding, horizontal layouts */
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* Large spacing, multi-column layouts */
+}
+
+/* Ultra-wide screens (1440px and up) */
+@media (min-width: 1440px) {
+  /* Max-width containers, full-width hero banners */
+}
